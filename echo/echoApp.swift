@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct echoApp: App {
+    @State private var messageData = MessageData()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(messageData)
         }
     }
 }
