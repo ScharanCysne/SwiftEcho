@@ -1,4 +1,4 @@
-# ECHO (a.k.a Efficient Chatbot and Helper Orchestrator)
+# ECHO 
 
 ## Introduction
 
