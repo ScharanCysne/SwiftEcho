@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D8151212CE58C3F00CE7420 /* library.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7D8151202CE58C3F00CE7420 /* library.mm */; };
 		7D8D349E2CE1071D00A0CE5D /* echoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D349D2CE1071D00A0CE5D /* echoApp.swift */; };
 		7D8D34A02CE1071D00A0CE5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D349F2CE1071D00A0CE5D /* ContentView.swift */; };
 		7D8D34A22CE1072000A0CE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D8D34A12CE1072000A0CE5D /* Assets.xcassets */; };
@@ -21,14 +22,11 @@
 		7D8D34BE2CE1917000A0CE5D /* SoundWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D34BD2CE1917000A0CE5D /* SoundWave.swift */; };
 		7D8D34C12CE1946E00A0CE5D /* openai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D34C02CE1946E00A0CE5D /* openai.swift */; };
 		7D8D34C52CE2C39900A0CE5D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D34C42CE2C39900A0CE5D /* Configuration.swift */; };
-		7D8D34C72CE2CAA400A0CE5D /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D34C62CE2CAA300A0CE5D /* Agent.swift */; };
-		7D8D34C92CE2CAB400A0CE5D /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D34C82CE2CAB400A0CE5D /* Manager.swift */; };
-		7D8D34CB2CE2CABC00A0CE5D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D34CA2CE2CABC00A0CE5D /* State.swift */; };
-		7D8D34CD2CE2CAC600A0CE5D /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D34CC2CE2CAC600A0CE5D /* Memory.swift */; };
-		7D8D34D32CE2CDE000A0CE5D /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D34D22CE2CDE000A0CE5D /* utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D81511F2CE58C3F00CE7420 /* library.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = library.h; sourceTree = "<group>"; };
+		7D8151202CE58C3F00CE7420 /* library.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = library.mm; sourceTree = "<group>"; };
 		7D8D349A2CE1071D00A0CE5D /* echo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = echo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D8D349D2CE1071D00A0CE5D /* echoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = echoApp.swift; sourceTree = "<group>"; };
 		7D8D349F2CE1071D00A0CE5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,11 +43,7 @@
 		7D8D34C02CE1946E00A0CE5D /* openai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openai.swift; sourceTree = "<group>"; };
 		7D8D34C32CE2C35D00A0CE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7D8D34C42CE2C39900A0CE5D /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = echo/Core/Configuration.swift; sourceTree = SOURCE_ROOT; };
-		7D8D34C62CE2CAA300A0CE5D /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
-		7D8D34C82CE2CAB400A0CE5D /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		7D8D34CA2CE2CABC00A0CE5D /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		7D8D34CC2CE2CAC600A0CE5D /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
-		7D8D34D22CE2CDE000A0CE5D /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		7D8D34D52CE3781D00A0CE5D /* echo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "echo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +76,9 @@
 		7D8D349C2CE1071D00A0CE5D /* echo */ = {
 			isa = PBXGroup;
 			children = (
+				7D8D34D42CE3780500A0CE5D /* lib */,
 				7D8D34C32CE2C35D00A0CE5D /* Info.plist */,
 				7D8D34CF2CE2CAE900A0CE5D /* Core */,
-				7D8D34BF2CE193A100A0CE5D /* Agent */,
 				7D8D34B62CE1896E00A0CE5D /* Shapes */,
 				7D8D34B52CE1896100A0CE5D /* Model */,
 				7D8D34AE2CE1074300A0CE5D /* Views */,
@@ -141,33 +135,23 @@
 			path = Shapes;
 			sourceTree = "<group>";
 		};
-		7D8D34BF2CE193A100A0CE5D /* Agent */ = {
-			isa = PBXGroup;
-			children = (
-				7D8D34CE2CE2CAD300A0CE5D /* States */,
-			);
-			path = Agent;
-			sourceTree = "<group>";
-		};
-		7D8D34CE2CE2CAD300A0CE5D /* States */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = States;
-			sourceTree = "<group>";
-		};
 		7D8D34CF2CE2CAE900A0CE5D /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				7D8D34C02CE1946E00A0CE5D /* openai.swift */,
 				7D8D34C42CE2C39900A0CE5D /* Configuration.swift */,
-				7D8D34C62CE2CAA300A0CE5D /* Agent.swift */,
-				7D8D34C82CE2CAB400A0CE5D /* Manager.swift */,
-				7D8D34CA2CE2CABC00A0CE5D /* State.swift */,
-				7D8D34CC2CE2CAC600A0CE5D /* Memory.swift */,
-				7D8D34D22CE2CDE000A0CE5D /* utils.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		7D8D34D42CE3780500A0CE5D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7D8D34D52CE3781D00A0CE5D /* echo-Bridging-Header.h */,
+				7D81511F2CE58C3F00CE7420 /* library.h */,
+				7D8151202CE58C3F00CE7420 /* library.mm */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +186,7 @@
 				TargetAttributes = {
 					7D8D34992CE1071D00A0CE5D = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -244,17 +229,13 @@
 				7D8D34B82CE1899000A0CE5D /* RoundedCorner.swift in Sources */,
 				7D8D34BE2CE1917000A0CE5D /* SoundWave.swift in Sources */,
 				7D8D34BA2CE18F0100A0CE5D /* InputView.swift in Sources */,
-				7D8D34CD2CE2CAC600A0CE5D /* Memory.swift in Sources */,
 				7D8D34A02CE1071D00A0CE5D /* ContentView.swift in Sources */,
 				7D8D34B22CE108BD00A0CE5D /* Message.swift in Sources */,
-				7D8D34CB2CE2CABC00A0CE5D /* State.swift in Sources */,
-				7D8D34D32CE2CDE000A0CE5D /* utils.swift in Sources */,
 				7D8D34B02CE1089D00A0CE5D /* MessageData.swift in Sources */,
 				7D8D34BC2CE1909E00A0CE5D /* MessageHistoryView.swift in Sources */,
-				7D8D34C92CE2CAB400A0CE5D /* Manager.swift in Sources */,
+				7D8151212CE58C3F00CE7420 /* library.mm in Sources */,
 				7D8D34C12CE1946E00A0CE5D /* openai.swift in Sources */,
 				7D8D349E2CE1071D00A0CE5D /* echoApp.swift in Sources */,
-				7D8D34C72CE2CAA400A0CE5D /* Agent.swift in Sources */,
 				7D8D34C52CE2C39900A0CE5D /* Configuration.swift in Sources */,
 				7D8D34B42CE1887A00A0CE5D /* MessageView.swift in Sources */,
 			);
@@ -315,13 +296,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/opt/homebrew/opt/nlohmann-json/include";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LIBRARY_SEARCH_PATHS = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OPENAI_API_KEY = "";
 				OPENAI_BASE_URL = "https://api.openai.com/v1/chat/completions";
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -374,12 +358,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/opt/homebrew/opt/nlohmann-json/include";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LIBRARY_SEARCH_PATHS = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OPENAI_API_KEY = "";
 				OPENAI_BASE_URL = "https://api.openai.com/v1/chat/completions";
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -391,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"echo/Preview Content\"";
@@ -417,6 +405,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.echo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "echo/lib/echo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -427,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"echo/Preview Content\"";
@@ -453,6 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.echo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "echo/lib/echo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

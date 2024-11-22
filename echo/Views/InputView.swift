@@ -24,21 +24,15 @@ struct InputView: View {
         messages.append(newMessage)
         
         // New Agent Message
-        send(prompt: self.newMessage, model: "gpt-4o") { result in
-            switch result {
-            case .success(let response_str):
-                let response = Message(
-                    id: messages.count + 1,
-                    from: "agent",
-                    message: response_str,
-                    hour: Calendar.current.component(.hour, from: Date()),
-                    minute: Calendar.current.component(.minute, from: Date())
-                )
-                messages.append(response)
-            case .failure(let error):
-                print("Error: \(error)")
-            }
-        }
+        let response_str = echo.sendMessage(message: self.newMessage, model: "gpt-4o");
+        let response = Message(
+            id: messages.count + 1,
+            from: "agent",
+            message: response_str,
+            hour: Calendar.current.component(.hour, from: Date()),
+            minute: Calendar.current.component(.minute, from: Date())
+        )
+        messages.append(response);
 
         // Reset
         self.newMessage = ""
